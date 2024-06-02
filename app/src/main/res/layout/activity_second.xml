@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde"
+    tools:context=".SecondActivity">
+
+    <!-- Texto "Pesque de Quinua" -->
+
+    <!-- Imagen -->
+
+    <TextView
+        android:id="@+id/text_pesque_quinua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Pesque de Quinua"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/image_pesque_quinua"
+        android:layout_width="332dp"
+        android:layout_height="162dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="154dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/button_tipo_quinua"
+        android:layout_width="365dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Tipo de Quinua"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_pesque_quinua" />
+
+    <Button
+        android:id="@+id/button_tipo_leche"
+        android:layout_width="370dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Tipo de Leche"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_tipo_quinua" />
+
+    <Button
+        android:id="@+id/button_tipo_queso"
+        android:layout_width="370dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Tipo de Queso"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_tipo_leche" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="98dp"
+        android:layout_height="26dp"
+        android:text="marcar"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

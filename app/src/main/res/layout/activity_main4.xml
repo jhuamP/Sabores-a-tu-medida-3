@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4"
+    android:background="@color/verde">
+    <ImageView
+        android:id="@+id/iimage_pesque_quinua"
+        android:layout_width="319dp"
+        android:layout_height="251dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="47dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+    <ImageView
+        android:id="@+id/image_pesque_quinua"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/image_pesque"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button_quinua_blanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Quinua Blanca"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/circle_quinua_blanca"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_pesque_quinua"
+        app:layout_marginTop="16dp" />
+
+    <View
+        android:id="@+id/circle_quinua_blanca"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/circle_red"
+        app:layout_constraintTop_toTopOf="@id/button_quinua_blanca"
+        app:layout_constraintBottom_toBottomOf="@id/button_quinua_blanca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_marginEnd="16dp" />
+
+    <!-- Botón "Quinua Negra" -->
+
+    <!-- Círculo para "Quinua Negra" -->
+    <Button
+        android:id="@+id/button_quinua_negra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:textSize="20dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Quinua Negra"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@id/circle_quinua_negra"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_quinua_blanca"
+        app:layout_marginTop="16dp" />
+
+    <View
+        android:id="@+id/circle_quinua_negra"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/circle_red"
+        app:layout_constraintTop_toTopOf="@id/button_quinua_negra"
+        app:layout_constraintBottom_toBottomOf="@id/button_quinua_negra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_marginEnd="16dp" />
+
+    <!-- Botón "Quinua Roja" -->
+
+    <!-- Círculo para "Quinua Roja" -->
+
+    <Button
+        android:id="@+id/button_quinua_roja"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Quinua Roja"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/circle_quinua_roja"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_quinua_negra"
+        app:layout_marginTop="16dp" />
+
+    <View
+        android:id="@+id/circle_quinua_roja"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/circle_red"
+        app:layout_constraintTop_toTopOf="@id/button_quinua_roja"
+        app:layout_constraintBottom_toBottomOf="@id/button_quinua_roja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_marginEnd="16dp" />
+
+    <!-- Botón "Siguiente" -->
+    <Button
+        android:id="@+id/button_siguiente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="Siguiente"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_quinua_roja"
+        app:layout_marginEnd="16dp"
+        app:layout_marginStart="16dp"
+        app:layout_marginTop="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

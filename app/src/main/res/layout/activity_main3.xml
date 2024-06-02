@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/verde"
+    tools:context=".MainActivity3">
+
+
+
+    <TextView
+        android:id="@+id/tipo_plato"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SELECCIONAR SU TIPO DE PLATO"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:backgroundTintMode="@color/CELESTE"
+        app:layout_constraintBottom_toTopOf="@id/plato1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintMarginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/plato1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/plato2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tipo_plato">
+
+        <Button
+            android:id="@+id/button_plato1"
+            android:layout_width="393dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_background"
+            android:text="EL CHAIRO"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100sp"
+            android:layout_height="35dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="47dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/plato2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/plato3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plato1">
+
+        <Button
+            android:id="@+id/button_plato2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_background"
+            android:text="CHUPE DE QUINUA"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100sp"
+            android:layout_height="35dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="47dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/plato3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plato2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/plato4"
+        app:layout_constraintMarginBottom="8dp">
+
+        <Button
+            android:id="@+id/button_plato3"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_background"
+            android:text="TRUCHA FRITA"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100sp"
+            android:layout_height="35dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="47dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/plato4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plato3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/plato5"
+        app:layout_constraintMarginBottom="8dp">
+
+        <Button
+            android:id="@+id/button_plato4"
+            android:layout_width="368dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_background"
+            android:text="CHICHARRON DE ALPACA"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100sp"
+            android:layout_height="35dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="47dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/plato5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plato4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/plato6"
+        app:layout_constraintMarginBottom="8dp">
+
+        <Button
+            android:id="@+id/button_plato5"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_background"
+            android:text="PESQUE DE QUINUA"
+            android:textSize="18sp"
+
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100sp"
+            android:layout_height="35dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="47dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plato6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/plato5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_otros"
+        app:layout_constraintMarginBottom="16dp">
+
+        <Button
+            android:id="@+id/button_plato6"
+            android:layout_width="393dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_background"
+            android:text="CANCACHO"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100sp"
+            android:layout_height="35dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="47dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_otros"
+        android:layout_width="391dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="OTROS"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plato6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
